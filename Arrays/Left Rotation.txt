@@ -1,0 +1,6 @@
+def rotLeft(a, d):
+    n=len(a)
+    atemp=a[:d]
+    a[:n-d]=a[d:n]
+    a[n-d:n]=atemp
+    return a

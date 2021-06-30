@@ -1,0 +1,7 @@
+def sockMerchant(n, ar):
+    ans=0
+    ar.sort()
+    
+    for val in [len(list(group)) for key,group in groupby(ar)]:
+       ans = ans + val//2
+    return ans  
